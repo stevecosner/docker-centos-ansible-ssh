@@ -1,0 +1,15 @@
+---
+- name: uptime
+  raw: uptime
+
+  register: uptime
+
+- debug: var=uptime.stdout_lines
+
+
+- name: version
+  raw: cat /etc/os-release
+
+  register: version
+
+- debug: var=version.stdout_lines

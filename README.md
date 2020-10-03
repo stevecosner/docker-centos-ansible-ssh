@@ -1,2 +1,7 @@
-# docker-centos-ansible-ssh
-Create a systemd centos container with ssh and use ansible to update and retrieve info.
+# docker-centos-ssh
+Create a Centos Docker container that you can ssh to.
+
+docker run example:
+
+docker run --privileged --name ssh1 -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 2222:22 -d  ssh-centos-1
+

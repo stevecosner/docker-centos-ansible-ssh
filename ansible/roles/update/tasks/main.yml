@@ -1,0 +1,14 @@
+---
+- name: yum update
+  yum: 
+    name: '*'
+    state: latest
+  register: yum_result
+
+- debug:
+     var: yum_result
+
+#- name: upgrade all packages
+#  yum:
+#    name: "*"
+#    state: latest

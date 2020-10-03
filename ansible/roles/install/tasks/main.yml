@@ -1,0 +1,6 @@
+- name: install packages
+  yum:
+    name:
+      - httpd
+      - curl
+    state: latest

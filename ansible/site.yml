@@ -1,0 +1,12 @@
+---
+
+- name: yum roles
+
+  hosts: servers
+#  become: yes
+  remote_user: root
+  
+  roles:
+#    - update
+#    - show
+   - install 
